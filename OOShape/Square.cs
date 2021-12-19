@@ -8,8 +8,8 @@ namespace OOShape
 
         public int SideLength { get; set; }
 
-        public double Area { get; set; }
-        public double Perimeter { get; set; }
+        private double Area { get; set; }
+        private double Perimeter { get; set; }
 
         public Square(int sideLength)
         {

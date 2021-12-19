@@ -9,13 +9,10 @@ namespace OOShape
         public int Height { get; set; }
         
        
-        public double Area { get; set; }
-        public double Perimeter { get; set; }
+        private double Area { get; set; }
+        private double Perimeter { get; set; }
 
-        public Rectangle()
-        {
-        }
-
+        
         public Rectangle(int width, int height) : this(width)
         {
             //Width = width;
