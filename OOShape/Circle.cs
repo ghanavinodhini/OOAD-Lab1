@@ -1,7 +1,7 @@
 ﻿using System;
 namespace OOShape
 {
-    public class Circle : Shape
+    public class Circle 
     {
         public int Radius { get; set; }
 

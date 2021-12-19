@@ -21,9 +21,9 @@ namespace OOShape
             Console.WriteLine(rectangleWithEqualSides);
             Console.WriteLine();
 
-            Circle circle = new Circle(5);
+           /* Circle circle = new Circle(5);
             Console.WriteLine(circle);
-            circle.SayHello();
+            circle.SayHello();*/
         }
     }
 }
