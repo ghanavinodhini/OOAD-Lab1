@@ -9,7 +9,7 @@ namespace OOShape
         public abstract override string ToString();
 
         
-        public void SayHello()
+        public virtual void SayHello()
         {
             Console.WriteLine($"{this.GetType().Name} says hello!");
         }

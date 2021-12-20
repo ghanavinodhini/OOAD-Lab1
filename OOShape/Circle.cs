@@ -7,9 +7,6 @@ namespace OOShape
     {
         public int Radius { get; set; }
 
-        private double Area { get; set; }
-        private double Perimeter { get; set; }
-        
 
         public Circle(int radius)
         {
@@ -19,15 +16,25 @@ namespace OOShape
         public override double GetArea()
         {
             
-            Area = 3.141592653589793238 * Radius * Radius;
-            return Area;
+            return 3.141592653589793238 * Radius * Radius;
         }
 
         public override double GetPerimeter()
         {
-            Perimeter = 2 * 3.141592653589793238 * Radius;
-            return Perimeter; 
+            return 2 * 3.141592653589793238 * Radius;
+          
         }
+
+        public override void SayHello()
+        {
+            Console.Write("Welcome to Circle!!!");   
+        }
+
+        public override void ScreamHello()
+        {
+            Console.WriteLine($"Circle's area and perimeter calculated with radius value {Radius}");
+        }
+        
 
         public override string ToString()
         {

@@ -8,13 +8,10 @@ namespace OOShape
 
         public int SideLength { get; set; }
 
-        private double Area { get; set; }
-        private double Perimeter { get; set; }
 
         public Square(int sideLength)
         {
            SideLength = sideLength;
-            //Console.WriteLine("SideLength value:" + SideLength);
             GetArea();
             GetPerimeter();
         }
@@ -22,17 +19,13 @@ namespace OOShape
 
         public override double GetArea()
         {
-             Area = SideLength * SideLength;
-            //Console.WriteLine("Area value:" + Area);
-            return Area;
+             return SideLength * SideLength;
            
         }
 
         public override double GetPerimeter()
         {
-            Perimeter = 4 * SideLength;
-           // Console.WriteLine("Perimeter value:" + Perimeter);
-            return Perimeter;
+            return 4 * SideLength;
         }
 
         public override string ToString()

@@ -7,15 +7,10 @@ namespace OOShape
     {
         public int Width { get; set; }
         public int Height { get; set; }
-        
-       
-        private double Area { get; set; }
-        private double Perimeter { get; set; }
-
+     
         
         public Rectangle(int width, int height) : this(width)
         {
-            //Width = width;
             Height = height;
         }
 
@@ -27,14 +22,13 @@ namespace OOShape
 
         public override double GetArea()
         {
-            Area = Width * Height;
-            return Area;
+            return Width * Height;
         }
 
         public override double GetPerimeter()
         {
-            Perimeter = 2 * (Width + Height);
-            return Perimeter;
+            return 2 * (Width + Height);
+            
         }
 
         public override string ToString()

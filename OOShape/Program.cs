@@ -24,6 +24,7 @@ namespace OOShape
             Circle circle = new Circle(5);
             Console.WriteLine(circle);
             circle.SayHello();
+            circle.ScreamHello();
         }
     }
 }
